@@ -39,17 +39,32 @@ Number Add(Number k, Number t){
 
 Number Round(Number k){
     Number answ;
-    if (k.Z >= 0.5)
+    if (k.R >= 0.5)
     {
-        answ.R = k.R + 1;
-        answ.Z = 0;
+        answ.Z = k.Z + 1;
+        answ.R = 0;
     }
     else
     {
-        answ.R = k.R;
-        answ.Z = 0;
+        answ.Z = k.Z;
+        answ.R = 0;
     }
     return answ;
+}
+
+int Cmp(Number k, Number t){
+    if (k.Z > t.Z){
+        return 1;
+    }
+    else
+        if (k.Z < t.Z){
+            return 2;
+        }
+    else
+            if (k.R >= t.R ){
+                return 1;
+            }
+    else return 2;
 }
 
 int main()
@@ -60,5 +75,7 @@ int main()
     Display(example1);
     Display(Add(example1, example2));
     Display(Round(example1));
+    Cmp(example1, example2)==1?cout << "First ":cout <<"Second ";
+    cout << "is bigger" << endl;
     return 0;
 }
