@@ -48,7 +48,6 @@ int main()
     Display(example1);
     Display(Add(example1, example2));
     cout << "Period of Wave 1 is " << Period(example1) << endl;
-    //Cmp(example1, example2)==1?cout << "First ":cout <<"Second ";
-    //cout << "is bigger" << endl;
+
     return 0;
 }
