@@ -34,6 +34,7 @@ Number Add(Number k, Number t){
         Answ.R -= 1;
         Answ.Z += 1;
     }
+    return Answ;
 }
 
 int main()
