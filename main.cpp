@@ -3,8 +3,8 @@
 using namespace std;
 
 typedef struct{
-    float frequency; // вещественная часть
-    float Length; // дробная часть
+    float frequency; // частота
+    float Length; //длина
 } Wave;
 
 int Init(Wave *k, float a1, float a2){
