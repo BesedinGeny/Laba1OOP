@@ -30,7 +30,7 @@ public:
     }
     Number Round(){
         Number answ;
-        answ.Init(this->Z, this->Z);
+        answ.Init(this->Z, this->R);
         if (R >= 0.5){
             answ.Z += 1;
         }
